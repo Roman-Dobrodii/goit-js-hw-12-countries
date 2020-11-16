@@ -4,8 +4,12 @@ import currentCountry from '../templates/currentCountryTpl.hbs';
 import countryList from '../templates/countriesListTpl.hbs';
 
 import '@pnotify/core/dist/BrightTheme.css';
-const { error } = require('@pnotify/core');
-var debounce = require('lodash.debounce');
+// import '@pnotify/core/dist/Material.css';
+import '@pnotify/core/dist/PNotify.css';
+import { error } from '@pnotify/core';
+import { defaults } from '@pnotify/core';
+defaults.delay = '1000';
+const debounce = require('lodash.debounce');
 
 refs.searchForm.addEventListener(
   'input',

@@ -3,5 +3,5 @@ const countriesContainer = document.querySelector('.js-countries');
 
 export default {
   searchForm,
-  countriesContainer,
+  countriesContainer
 };
