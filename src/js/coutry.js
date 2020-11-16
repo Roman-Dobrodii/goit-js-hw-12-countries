@@ -48,7 +48,7 @@ function countrySearchInputHandler(e) {
 }
 
 function buildListMarkup(countries, template) {
-  const markup = countries.map(count => template(count)).join();
+  const markup = countries.map(count => template(count)).join('');
   refs.countriesContainer.insertAdjacentHTML('afterbegin', markup);
 }
 
